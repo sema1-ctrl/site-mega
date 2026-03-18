@@ -1,0 +1,52 @@
+body {
+    background-color: PaleGreen;
+}
+
+/* Контейнер для контактов и изображения */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Контейнер для контактной информации */
+.contacts-info {
+    flex: 1; /* Занимает доступное пространство */
+}
+
+.cont p {
+    background-color: SpringGreen;
+    padding: 5px;
+    width: 100%; /* Изменено с 20% на 100% */
+    max-width: 400px; /* Максимальная ширина для каждого блока */
+    border-radius: 10px;
+}
+
+/* Стили для изображения */
+.content-wrapper img {
+    width: 400px; /* Фиксированная ширина */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .content-wrapper img {
+        width: 100%;
+        max-width: 500px;
+    }
+    
+    .cont p {
+        max-width: 100%;
+    }
+}

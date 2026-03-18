@@ -1,0 +1,63 @@
+a{
+	 text-decoration: none;
+	 background-color:Lime;
+	 padding:10px 15px;
+	 border-radius:10px;
+	 font-size:20px;
+	 font-family: 'Lato', sans-serif;
+	 color:DarkGreen;
+	 font-weight:1000;
+	 
+}
+
+nav{
+	  display: flex;
+	  gap: 10px;
+  margin-bottom: 30px;
+  justify-content: center;
+  padding:15px;
+  
+	
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 75px; /* Чтобы компенсировать фиксированный header */
+    box-sizing: border-box;
+}
+
+header {
+    background-color: green;
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
+main {
+    flex: 1; /* Занимает все доступное пространство */
+}
+
+footer {
+    background-color:yellow;
+    width: 100%;
+    height: 150px;
+    /* Убираем position, left, bottom */
+    margin-top: auto; /* Прижимает футер к низу */
+}
+footer p{
+	padding:50px;
+	font-weight:bold;
+	font-size:25px;
+}
+h1{font-size:65px;}

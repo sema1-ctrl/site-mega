@@ -1,0 +1,36 @@
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 33%; /* Ширина изображения */
+  padding: 4px; /* Внутренний отступ между изображениями */
+  box-sizing: border-box; /* Включает padding в ширину изображения */
+}
+
+	
+
+body{
+    background-image: url("https://img.freepik.com/premium-photo/blue-yellow-red-gradient-color-abstract-background_608068-1458.jpg?size=626&ext=jpg");
+    background-size: cover;      /* Растягивает на весь экран */
+    background-position: center; /* Центрирует */
+    background-repeat: no-repeat; /* Без повторения */
+}
+h1{font-size:50px;}
+p{font-size:20px;}
+
+.about_mega{
+	background-color:yellow;
+	 Padding:25px;
+	 border-radius:10px;
+}
+.gallery_{
+	background-color:orange;
+	 Padding:25px;
+	 border-radius:10px;
+}
+
+
