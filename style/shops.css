@@ -17,6 +17,7 @@
             overflow: hidden;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+			 height: fit-content; 
         }
         
         .promotion-card:hover {
@@ -69,7 +70,7 @@
         }
         
         .card-body {
-            padding: 24px;
+            padding: 20px;
         }
         
         .product-category {
@@ -91,15 +92,15 @@
         
         .product-description {
             color: #666;
-            font-size: 15px;
+            font-size: 14px;
             line-height: 1.5;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
         
         .price-container {
             display: flex;
             align-items: center;
-            margin-bottom: 24px;
+            margin-bottom: 18px;
         }
         
         .old-price {
@@ -123,8 +124,8 @@
         .timer-container {
             background-color: #f8f9fa;
             border-radius: 12px;
-            padding: 16px;
-            margin-bottom: 24px;
+            padding: 12px;
+            margin-bottom: 18px;
         }
         
         .timer-title {
@@ -213,8 +214,8 @@
         .store-info {
             display: flex;
             align-items: center;
-            margin-top: 20px;
-            padding-top: 20px;
+            margin-top: 15px;
+            padding-top: 15px;
             border-top: 1px solid #eee;
             color: #666;
             font-size: 14px;
