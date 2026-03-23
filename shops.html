@@ -1,270 +1,359 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="style/shops.css">
-<link rel="stylesheet" href="style/style.css"> 
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Магазин видеоигр</title>
-	</head>
+    <link rel="stylesheet" href="style/shops.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Дополнительные стили для исправления смещений */
+        body {
+            padding-top: 75px;
+            background-color: MediumSpringGreen;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1 {
+            color: white;
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        /* Исправление для секции магазинов */
+        .stores-section {
+            margin-top: 40px;
+        }
+        
+        /* Исправление для карточек магазинов */
+        .crd_dsgn a {
+            text-decoration: none;
+            background-color: transparent;
+            padding: 0;
+            border-radius: 0;
+            font-size: inherit;
+            color: inherit;
+            font-weight: normal;
+        }
+        
+        .crd_hdng {
+            text-align: center;
+        }
+        
+        .crd_hdng a {
+            display: inline-block;
+            width: 100%;
+        }
+        
+        .crd_hdng h5 {
+            width: 100%;
+            height: 50px;
+            padding: 0 20px;
+            line-height: 50px;
+            font-size: 18px;
+            font-weight: normal;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 10px;
+            transition: all 0.5s ease-in-out 0s;
+            text-align: center;
+            background-color: transparent;
+        }
+        
+        /* Убираем конфликтующие стили для ссылок в навигации */
+        nav a {
+            text-decoration: none;
+            background-color: Lime;
+            padding: 10px 15px;
+            border-radius: 10px;
+            font-size: 20px;
+            font-family: 'Lato', sans-serif;
+            color: DarkGreen;
+            font-weight: 1000;
+            display: inline-block;
+        }
+        
+        /* Исправление для секции акций */
+        .promotion {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            .promotion {
+                padding: 10px;
+            }
+            
+            main {
+                padding: 10px;
+            }
+            
+            h1 {
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
 <body>
-<!-- HEADER -->
+    <!-- HEADER -->
     <header>
         <nav>
             <a href="index.html">Главная</a>
-               <a href="shops.html">Магазины</a>
-               <a href="contacts.html">Контакты</a>
+            <a href="shops.html">Магазины</a>
+            <a href="contacts.html">Контакты</a>
         </nav>
     </header>
-	<center><br><br>
-	<h1>акции</h1><br><br>
-	<div class="promotion">
-	<div class="promotion-card">
-        <div class="card-header">
-            <img src="img/найк.jpg">
-            <div class="discount-badge">
-                <span class="discount-value">-30%</span>
-                <span class="discount-text">СКИДКА</span>
-            </div>
-        </div>
-        
-        <div class="card-body">
-            <div class="product-category">Обувь • Спорт</div>
-            <h2 class="product-title">Кроссовки для бега Nike Air Max 270</h2>
-            <p class="product-description">Легкие и удобные кроссовки с амортизирующей подошвой для максимального комфорта во время тренировок и повседневной носки.</p>
-            
-            <div class="price-container">
-                <span class="old-price">8 499 ₽</span>
-                <span class="new-price">5 949<span class="currency">₽</span></span>
-            </div>
-            
-            <div class="timer-container">
-                <div class="timer-title">
-                    <i class="fas fa-clock"></i> До конца акции осталось:
-                </div>
-                <div class="timer">
-                    <div class="time-unit">
-                        <span class="time-value" id="days">03</span>
-                        <span class="time-label">Дней</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="card-footer">
-                <button class="btn btn-primary">
-                    <i class="fas fa-shopping-cart"></i> Купить по акции
-                </button>
-                <button class="btn btn-secondary">
-                    <i class="far fa-heart"></i>
-                </button>
-            </div>
-            
-            <div class="store-info">
-                <i class="fas fa-store store-icon"></i>
-                Акция действует в магазине "СпортМир" (2 этаж, секция B5)
-            </div>
-        </div>
-    </div>
-	
-	
-	<div class="promotion-card">
-    <div class="card-header">
-        <img src="img/пс5.png" alt="Игровая консоль">
-        <div class="discount-badge">
-            <span class="discount-value">-25%</span>
-            <span class="discount-text">СКИДКА</span>
-        </div>
-    </div>
     
-    <div class="card-body">
-        <div class="product-category">Игры • Консоли</div>
-        <h2 class="product-title">Игровая консоль PlayStation 5</h2>
-        <p class="product-description">Мощная игровая консоль нового поколения с поддержкой 4K, ray tracing и SSD накопителем для мгновенной загрузки игр.<br><br><br></p>
-       
-        <div class="price-container">
-            <span class="old-price">59 999 ₽</span>
-            <span class="new-price">44 999<span class="currency">₽</span></span>
-        </div>
+    <main>
+        <h1>Акции</h1>
         
-        <div class="timer-container">
-            <div class="timer-title">
-                <i class="fas fa-clock"></i> До конца акции осталось:
+        <div class="promotion">
+            <div class="promotion-card">
+                <div class="card-header">
+                    <img src="img/найк.jpg" alt="Кроссовки Nike" class="product-image">
+                    <div class="discount-badge">
+                        <span class="discount-value">-30%</span>
+                        <span class="discount-text">СКИДКА</span>
+                    </div>
+                </div>
+                
+                <div class="card-body">
+                    <div class="product-category">Обувь • Спорт</div>
+                    <h2 class="product-title">Кроссовки для бега Nike Air Max 270</h2>
+                    <p class="product-description">Легкие и удобные кроссовки с амортизирующей подошвой для максимального комфорта во время тренировок и повседневной носки.</p>
+                    
+                    <div class="price-container">
+                        <span class="old-price">8 499 ₽</span>
+                        <span class="new-price">5 949<span class="currency">₽</span></span>
+                    </div>
+                    
+                    <div class="timer-container">
+                        <div class="timer-title">
+                            <i class="fas fa-clock"></i> До конца акции осталось:
+                        </div>
+                        <div class="timer">
+                            <div class="time-unit">
+                                <span class="time-value" id="days">03</span>
+                                <span class="time-label">Дней</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-shopping-cart"></i> Купить по акции
+                        </button>
+                        <button class="btn btn-secondary">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="store-info">
+                        <i class="fas fa-store store-icon"></i>
+                        Акция действует в магазине "СпортМир" (2 этаж, секция B5)
+                    </div>
+                </div>
             </div>
-            <div class="timer">
-                <div class="time-unit">
-                    <span class="time-value" id="days2">02</span>
-                    <span class="time-label">Дней</span>
+            
+            <div class="promotion-card">
+                <div class="card-header">
+                    <img src="img/пс5.png" alt="Игровая консоль" class="product-image">
+                    <div class="discount-badge">
+                        <span class="discount-value">-25%</span>
+                        <span class="discount-text">СКИДКА</span>
+                    </div>
+                </div>
+                
+                <div class="card-body">
+                    <div class="product-category">Игры • Консоли</div>
+                    <h2 class="product-title">Игровая консоль PlayStation 5</h2>
+                    <p class="product-description">Мощная игровая консоль нового поколения с поддержкой 4K, ray tracing и SSD накопителем для мгновенной загрузки игр.</p>
+                   
+                    <div class="price-container">
+                        <span class="old-price">59 999 ₽</span>
+                        <span class="new-price">44 999<span class="currency">₽</span></span>
+                    </div>
+                    
+                    <div class="timer-container">
+                        <div class="timer-title">
+                            <i class="fas fa-clock"></i> До конца акции осталось:
+                        </div>
+                        <div class="timer">
+                            <div class="time-unit">
+                                <span class="time-value" id="days2">02</span>
+                                <span class="time-label">Дней</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-shopping-cart"></i> Купить по акции
+                        </button>
+                        <button class="btn btn-secondary">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="store-info">
+                        <i class="fas fa-store store-icon"></i>
+                        Акция действует в магазине "М.Видео" (1 этаж, секция A3)
+                    </div>
+                </div>
+            </div>
+
+            <div class="promotion-card">
+                <div class="card-header">
+                    <img src="img/ноут.jpg" alt="Игровой ноутбук" class="product-image">
+                    <div class="discount-badge">
+                        <span class="discount-value">-20%</span>
+                        <span class="discount-text">СКИДКА</span>
+                    </div>
+                </div>
+                
+                <div class="card-body">
+                    <div class="product-category">Техника • Игры</div>
+                    <h2 class="product-title">Игровой ноутбук ASUS ROG Strix G15</h2>
+                    <p class="product-description">Высокопроизводительный игровой ноутбук с процессором Intel Core i7, видеокартой RTX 3060 и экраном 144 Гц.</p>
+                    
+                    <div class="price-container">
+                        <span class="old-price">89 999 ₽</span>
+                        <span class="new-price">71 999<span class="currency">₽</span></span>
+                    </div>
+                    
+                    <div class="timer-container">
+                        <div class="timer-title">
+                            <i class="fas fa-clock"></i> До конца акции осталось:
+                        </div>
+                        <div class="timer">
+                            <div class="time-unit">
+                                <span class="time-value" id="days3">05</span>
+                                <span class="time-label">Дней</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-shopping-cart"></i> Купить по акции
+                        </button>
+                        <button class="btn btn-secondary">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="store-info">
+                        <i class="fas fa-store store-icon"></i>
+                        Акция действует в магазине "DNS" (3 этаж, секция C2)
+                    </div>
                 </div>
             </div>
         </div>
         
-        <div class="card-footer">
-            <button class="btn btn-primary">
-                <i class="fas fa-shopping-cart"></i> Купить по акции
-            </button>
-            <button class="btn btn-secondary">
-                <i class="far fa-heart"></i>
-            </button>
+        <div class="stores-section">
+            <h1>Магазины</h1>
+            
+            <div class="card_desing_cnt">
+                <div class="crd_dsgn">
+                    <div class="crd_img">
+                        <img src="img/1.png" alt="Hoff">
+                    </div>
+                    <div class="crd_hdng">
+                        <a href="https://hoff.ru" target="_blank"><h5>hoff</h5></a>
+                    </div>
+                </div>
+                
+                <div class="crd_dsgn">
+                    <div class="crd_img">
+                        <img src="img/2.jpg" alt="Acoola">
+                    </div>
+                    <div class="crd_hdng">
+                        <a href="https://acoolakids.ru/" target="_blank"><h5>acoola</h5></a>
+                    </div>
+                </div>
+                
+                <div class="crd_dsgn">
+                    <div class="crd_img">
+                        <img src="img/3.jpg" alt="Спортмастер">
+                    </div>
+                    <div class="crd_hdng">
+                        <a href="https://www.sportmaster.ru/" target="_blank"><h5>спортмастер</h5></a>
+                    </div>
+                </div>
+                
+                <div class="crd_dsgn">
+                    <div class="crd_img">
+                        <img src="img/4.png" alt="М.Видео">
+                    </div>
+                    <div class="crd_hdng">
+                        <a href="https://www.mvideo.ru/" target="_blank"><h5>м.видео</h5></a>
+                    </div>
+                </div>
+                
+                <div class="crd_dsgn">
+                    <div class="crd_img">
+                        <img src="img/5.png" alt="Sunlight">
+                    </div>
+                    <div class="crd_hdng">
+                        <a href="https://sunlight.net/" target="_blank"><h5>sunlight</h5></a>
+                    </div>
+                </div>
+                
+                <div class="crd_dsgn">
+                    <div class="crd_img">
+                        <img src="img/6.jpg" alt="DNS">
+                    </div>
+                    <div class="crd_hdng">
+                        <a href="https://www.dns-shop.ru/" target="_blank"><h5>dns</h5></a>
+                    </div>
+                </div>
+                
+                <div class="crd_dsgn">
+                    <div class="crd_img">
+                        <img src="img/7.png" alt="OBI">
+                    </div>
+                    <div class="crd_hdng">
+                        <a href="https://obikatalog.ru" target="_blank"><h5>obi</h5></a>
+                    </div>
+                </div>
+                
+                <div class="crd_dsgn">
+                    <div class="crd_img">
+                        <img src="img/8.png" alt="Haier">
+                    </div>
+                    <div class="crd_hdng">
+                        <a href="https://haieronline.ru/" target="_blank"><h5>haier</h5></a>
+                    </div>
+                </div>
+                
+                <div class="crd_dsgn">
+                    <div class="crd_img">
+                        <img src="img/9.png" alt="Gloria Jeans">
+                    </div>
+                    <div class="crd_hdng">
+                        <a href="https://www.gloria-jeans.ru/" target="_blank"><h5>gloria jeans</h5></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-        <div class="store-info">
-            <i class="fas fa-store store-icon"></i>
-            Акция действует в магазине "М.Видео" (1 этаж, секция A3)
-        </div>
-    </div>
-</div>
-
-<div class="promotion-card">
-    <div class="card-header">
-        <img src="img/ноут.jpg" alt="Игровой ноутбук">
-        <div class="discount-badge">
-            <span class="discount-value">-20%</span>
-            <span class="discount-text">СКИДКА</span>
-        </div>
-    </div>
+    </main>
     
-    <div class="card-body">
-        <div class="product-category">Техника • Игры</div>
-        <h2 class="product-title">Игровой ноутбук ASUS ROG Strix G15</h2>
-        <p class="product-description">Высокопроизводительный игровой ноутбук с процессором Intel Core i7, видеокартой RTX 3060 и экраном 144 Гц.<br><br></p>
-        
-        <div class="price-container">
-            <span class="old-price">89 999 ₽</span>
-            <span class="new-price">71 999<span class="currency">₽</span></span>
-        </div>
-        
-        <div class="timer-container">
-            <div class="timer-title">
-                <i class="fas fa-clock"></i> До конца акции осталось:
-            </div>
-            <div class="timer">
-                <div class="time-unit">
-                    <span class="time-value" id="days3">05</span>
-                    <span class="time-label">Дней</span>
-                </div>
-            </div>
-        </div>
-        
-        <div class="card-footer">
-            <button class="btn btn-primary">
-                <i class="fas fa-shopping-cart"></i> Купить по акции
-            </button>
-            <button class="btn btn-secondary">
-                <i class="far fa-heart"></i>
-            </button>
-        </div>
-        
-        <div class="store-info">
-            <i class="fas fa-store store-icon"></i>
-            Акция действует в магазине "DNS" (3 этаж, секция C2)
-        </div>
-    </div>
-</div>
-</div>
-	
-	
-	<br>
-	<br><br>
-
-	<h1>магазины</h1><br><br><br>
-	<div class="card_desing_cnt">
-            <div class="crd_dsgn">
-                <a href="javascript:;">
-                    <div class="crd_img">
-                        <img src="img/1.png" alt="">
-                    </div>
-                    <div class="crd_hdng">
-                         <a href="https://hoff.ru"> <h5>hoff</h5></a>
-                    </div>
-                </a>
-            </div>
-			<div class="crd_dsgn">
-                <a href="javascript:;">
-                    <div class="crd_img">
-                        <img src="img/2.jpg" alt="">
-                    </div>
-                    <div class="crd_hdng">
-                         <a href="https://acoolakids.ru/"><h5>acoola</h5></a>
-                    </div>
-                </a>
-            </div>
-			<div class="crd_dsgn">
-                <a href="javascript:;">
-                    <div class="crd_img">
-                        <img src="img/3.jpg" alt="">
-                    </div>
-                    <div class="crd_hdng">
-                       <a href="https://www.sportmaster.ru/"><h5>спортмастер</h5></a>
-                    </div>
-                </a>
-            </div>
-			<div class="crd_dsgn">
-                <a href="javascript:;">
-                    <div class="crd_img">
-                        <img src="img/4.png" alt="">
-                    </div>
-                    <div class="crd_hdng">
-                        <a href="https://www.mvideo.ru/"><h5>м.видео</h5></a>
-                    </div>
-                </a>
-            </div>
-			<div class="crd_dsgn">
-                <a href="javascript:;">
-                    <div class="crd_img">
-                        <img src="img/5.png" alt="">
-                    </div>
-                    <div class="crd_hdng">
-                        <a href="https://sunlight.net/"><h5>sunlight</h5></a>
-                    </div>
-                </a>
-            </div>
-			<div class="crd_dsgn">
-                <a href="javascript:;">
-                    <div class="crd_img">
-                        <img src="img/6.jpg" alt="">
-                    </div>
-                    <div class="crd_hdng">
-                        <a href="https://www.dns-shop.ru/"><h5>dns</h5></a>
-                    </div>
-                </a>
-            </div>
-			<div class="crd_dsgn">
-                <a href="javascript:;">
-                    <div class="crd_img">
-                        <img src="img/7.png" alt="">
-                    </div>
-                    <div class="crd_hdng">
-                         <a href="https://obikatalog.ru"><h5>obi</h5></a>
-                    </div>
-                </a>
-            </div>
-			<div class="crd_dsgn">
-                <a href="javascript:;">
-                    <div class="crd_img">
-                        <img src="img/8.png" alt="">
-                    </div>
-                    <div class="crd_hdng">
-                        <a href="https://haieronline.ru/"><h5>haier</h5></a>
-                    </div>
-                </a>
-            </div>
-			<div class="crd_dsgn">
-                <a href="javascript:;">
-                    <div class="crd_img">
-                        <img src="img/9.png" alt="">
-                    </div>
-                    <div class="crd_hdng">
-                        <a href="https://www.gloria-jeans.ru//"><h5>gloria jeans</h5></a>
-                    </div>
-                </a>
-            </div>
-	</div>	
-</center>	
-<!-- FOOTER -->
+    <!-- FOOTER -->
     <footer>
-	<center>
-     <p>2026 мега белая дача.тел: +7(456)123 45 67</p>
-	 </center>
+        <center>
+            <p>2026 мега белая дача.тел: +7(456)123 45 67</p>
+        </center>
     </footer>
 </body>
 </html>
