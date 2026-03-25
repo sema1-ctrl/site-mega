@@ -1,10 +1,11 @@
 
-        .promotion{
-			display: flex;
-			flex-wrap: wrap;
-			gap: 20px;
-			justify-content: center;
-		}
+      .promotion {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 колонки равной ширины */
+    gap: 30px;
+    align-items: stretch;
+}
+
 		
         
 		
